@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Do A Toggle Checkbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box-middle">
+        <input type="checkbox" name="check" id="check" class="toggle-input">
+        <label onclick="turnLight()" for="check" class="toggle-label"></label>
+    </div>
+    <script>
+        function turnLight() {
+            var checkbox = document.getElementById("check");
+            if (checkbox.checked) return document.body.style.backgroundColor = "white"; 
+            return document.body.style.backgroundColor = "black";
+        }
+    </script>
+</body>
+</html>
